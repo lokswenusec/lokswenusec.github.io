@@ -148,11 +148,11 @@ a {
 
 .btn-secondary {
   background-color: var(--secondary-cyan);
-  color: var(--black);
+  color: var(--white);
 }
 
 .btn-secondary:hover {
-  background-color: var(---black); 
+  background-color: var(--black); 
   color: var(--white);
 }
 
@@ -164,7 +164,7 @@ a {
 
 .btn-ghost:hover {
   background-color: var(--secondary-blue); 
-  color: var(--white);
+  color: var(--black);
 }
 
 /* ============================================================================
