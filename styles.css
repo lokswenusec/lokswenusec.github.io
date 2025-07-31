@@ -150,7 +150,6 @@ a {
 .btn-secondary {
   background-color: var(--secondary-cyan);
   color: var(--black);
-  border: 2px solid var(--black);
 }
 
 .btn-secondary:hover {
