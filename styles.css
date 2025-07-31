@@ -177,15 +177,19 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px, 60px;
+  height: 60px; /* Set a fixed height for the header */
 }
 
-.logo img{
+.logo {
   display: flex;
   align-items: center;
-  height: 100%;
-  width: auto;
-  object-fit: contain;
+  height: 100%; /* Match container height */
+}
+
+.logo-svg {
+  height: 100%; /* Constrain to container height */
+  width: auto; /* Maintain aspect ratio */
+  max-height: 40px; /* Set maximum height to match nav items */
 }
 
 .nav-menu {
