@@ -16,7 +16,7 @@
   --black: #000000;
   --white: #ffffff;
   --light-gray: #EEEEEE;
-  --medium-gray: #888888;
+  --medium-gray: #666666;
   --dark-gray: #333333;
   --card-shadow: rgba(0, 0, 0, 0.1);
   
@@ -131,30 +131,41 @@ a {
   font-size: var(--font-size-sm);
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: all var(--transition-medium);
   text-decoration: none;
 }
 
 .btn-primary {
-  background-color: var(--secondary-cyan);
+  background-color: var(--primary-blue);
   color: var(--white);
 }
 
 .btn-primary:hover {
-  background-color: var(--hover-secondary); /* EDIT: Primary button hover color */
-  transform: translateY(-2px); /* EDIT: Button hover lift */
+  background-color: var(--black);
+  /*transform: translateY(-2px); /* note: Button hover lift */
 }
 
 .btn-secondary {
-  background-color: transparent;
-  color: var(--primary-blue);
-  border: 2px solid var(--primary-blue);
+  background-color: var(--secondary-cyan);
+  color: var(--black);
+  border: 2px solid var(--black);
 }
 
 .btn-secondary:hover {
-  background-color: var(--primary-blue); /* EDIT: Secondary button hover */
+  background-color: var(---black); 
+  color: var(--white);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+
+.btn-ghost:hover {
+  background-color: var(--secondary-blue); 
   color: var(--white);
 }
 
@@ -201,14 +212,14 @@ a {
 .nav-link {
   font-size: var(--font-size-sm);
   font-weight: 500;
-  color: var(--dark-gray);
+  color: var(--medium-gray);
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color var(--transition-fast);
 }
 
 .nav-link:hover {
-  color: var(--primary-blue); /* EDIT: Navigation hover color */
+  color: var(--black); /* EDIT: Navigation hover color */
 }
 
 /* ============================================================================
