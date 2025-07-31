@@ -1,154 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>MICROSEC - Lab 0xM Research Team</title>
-	<link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lab0xM - The MicroSec Research Lab focused on zero-day research, vulnerability discovery, and cybersecurity threats.">
+    <title>Lab0xM - The MicroSec Research Lab</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<!-- Header with Navigation -->
-	<header>
-		<div class="container">
-			<div class="logo">
-				<img src="microsec.png"/>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="https://www.microsec.io/">HOME</a></li>
-					<li><a href="#research">RESEARCH</a></li>
-					<li><a href="#team">TEAM</a></li>
-					<li><a href="#blog">BLOG</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img alt="Lab0xM" src="/assets/logos/Logo_Lab0xM.svg"/>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#research" class="nav-link">Research</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="https://microsec.io" class="nav-link" target="_blank">MicroSec.io <i class="fas fa-external-link-alt"></i></a></li>
+                    <li><a href="https://www.microsec.io/company/contact" class="btn btn-primary">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-	<main>
-		<!-- Hero Section -->
-		<section class="hero">
-			<div class="hero-overlay"></div>
-			<div class="container hero-text-center">
-				<h1>Lab 0xM Research Team</h1>
-				<div class="hero-content">
-					<p>Lab 0xM, Microsec's Cybersecurity Research Division, discovers zero-day vulnerabilities, IoT/OT security risks, and critical infrastructure threats through advanced research and responsible disclosure.</p>
-				</div>
-				<div class="cta-buttons">
-					<a href="#research" class="btn btn-primary">View Publications</a>
-					<a href="#areas" class="btn btn-secondary">Research Areas</a>
-				</div>
-			</div>
-		</section>
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-subtitle">Lab0xM</div>
+                    <h1 class="hero-title">MicroSec&apos;s Zero-Day Research Lab</h1>
+                    <p class="hero-description">
+                        Lab0xM is the dedicated zero-day research division of MicroSec, focused on discovering and responsibly disclosing zero-day vulnerabilities, IoT/OT security risks, and critical infrastructure threats.
+                    </p>
+                    <a href="#research" class="btn btn-primary">View Latest Research</a>
+                </div>
+            </div>
+        </section>
 
-		<!-- Latest Research Section -->
-		<section class="latest-research" id="research">
-			<div class="container">
-				<h2>Latest Research</h2>
-				<div class="research-cards">
-					<div class="card">
-						<span class="category">IoT Security</span>
-						<h3>Vulnerability Analysis of IoT Firmware</h3>
-						<p>Comprehensive study of firmware security in consumer IoT devices, revealing critical vulnerabilities.</p>
-						<a href="#" class="read-more">Read Paper →</a>
-					</div>
-					<div class="card">
-						<span class="category">OT Security</span>
-						<h3>Security in Industrial Control Systems</h3>
-						<p>Analysis of attack surfaces in modern SCADA systems and mitigation strategies.</p>
-						<a href="#" class="read-more">Read Paper →</a>
-					</div>
-					<div class="card">
-						<span class="category">Network Security</span>
-						<h3>Zero Trust Architecture for IoT</h3>
-						<p>Novel framework for implementing zero trust security in IoT networks.</p>
-						<a href="#" class="read-more">Read Paper →</a>
-					</div>
-				</div>
-			</div>
-		</section>
+        <!-- CORE RESEARCH AREAS SECTION -->
+        <section class="research-areas">
+            <div class="research-areas-container">
+                <h2 class="section-title">Core Research Areas</h2>
+                <p class="section-subtitle">
+                    At Lab0xM, we are committed to securing tomorrow's infrastructure through advanced threat research in these following areas.
+                </p>
+                
+                <div class="research-grid">
+                    <!-- Vulnerability Research Card -->
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="/assets/icons/vuln_research.svg" alt="Vulnerability Research Icon"/>
+                        </div>
+                        <h3 class="research-card-title">Vulnerability Research</h3>
+                        <p class="research-card-description">
+                            Zero-day research, exploit development, and responsible disclosure
+                        </p>
+                    </div>
+                    
+                    <!-- Threat Analysis Card -->
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <img src="/assets/icons/threat_analysis.svg" alt="Threat Analysis Icon"/>
+                        </div>
+                        <h3 class="research-card-title">Threat Analysis</h3>
+                        <p class="research-card-description">
+                            Advanced persistent threats, malware analysis, and attack methodologies
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<!-- Core Research Areas -->
-		<section class="core-research" id="areas">
-			<div class="container">
-				<h2>Core Research Areas</h2>
-				<div class="research-areas">
-					<div class="area-card">
-						<div class="icon bug"></div>
-						<h3>Vulnerability Research</h3>
-						<p>Zero-day research, exploit development, and responsible disclosure</p>
-					</div>
-					<div class="area-card">
-						<div class="icon target"></div>
-						<h3>Threat Analysis</h3>
-						<p>Advanced persistent threats, malware analysis, and attack methodologies</p>
-					</div>
-				</div>
-			</div>
-		</section>
+        <!-- LATEST RESEARCH SECTION -->
+		 <!-- EDIT: See if can make into carousel to keep adding new articles -->
+        <section class="latest-research" id="research">
+            <div class="latest-research-container">
+                <h2 class="section-title">Latest Research</h2>
+                <p class="section-subtitle">
+                    Read about the latest discoveries and disclosures made by our research team.
+                </p>
+                
+                <div class="research-posts">
+                    <!-- Research Post 1 -->
+                    <article class="research-post">
+                        <div class="research-post-content">
+                            <span class="research-category">IoT Security</span>
+                            <h3 class="research-post-title">Vulnerability Analysis of IoT Firmware</h3>
+                            <p class="research-post-description">
+                                Comprehensive study of firmware security in consumer IoT devices, revealing critical vulnerabilities.
+                            </p>
+							<!-- EDIT: Replace with actual link to blog -->
+                            <a href="#" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Research Post 2 -->
+                    <article class="research-post">
+                        <div class="research-post-content">
+                            <span class="research-category">Network Security</span>
+                            <h3 class="research-post-title">Zero Trust Architecture for IoT Networks</h3>
+                            <p class="research-post-description">
+                                Novel framework for implementing zero trust security in IoT networks.
+                            </p>
+							<!-- EDIT: Replace with actual link to blog -->
+                            <a href="#" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Research Post 3 -->
+                    <article class="research-post">
+                        <div class="research-post-content">
+                            <span class="research-category">OT Security</span>
+                            <h3 class="research-post-title">Security in Industrial Control Systems</h3>
+                            <p class="research-post-description">
+                                Analysis of attack surfaces in modern SCADA systems and mitigation strategies.
+                            </p>
+							<!-- EDIT: Replace with actual link to blog -->
+                            <a href="#" class="btn btn-secondary">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-		<!-- Team Section -->
-		<section class="team-section" id="team">
-		<div class="container">
-			<h2>Research Team</h2>
-			<div class="team-grid">
-			<div class="team-member">
-				<div class="member-photo"></div>
-				<h3></h3>
-				<p class="role">Position</p>
-				<p class="expertise">Expertise</p>
-			</div>
-			<div class="team-member">
-				<div class="member-photo"></div>
-				<h3></h3>
-				<p class="role">Position</p>
-				<p class="expertise">Expertise</p>
-			</div>
-			<div class="team-member">
-				<div class="member-photo"></div>
-				<h3></h3>
-				<p class="role">Position </p>
-				<p class="expertise">Expertise</p>
-			</div>
-			</div>
-		</div>
-		</section>
+        <!-- RESEARCH TEAM SECTION -->
+        <section class="research-team" id="about">
+            <div class="research-team-container">
+                <h2 class="section-title">Research Team</h2>
+                
+                <!-- Team Member: Souvik Kandar -->
+                <div class="team-member">
+                    <!-- EDIT: Replace with actual photo -->
+                    <img src="/assets/images/Profile_SouvikKandar.jpeg" alt="Souvik Kandar" class="team-member-photo">
+                    
+                    <div class="team-member-info">
+                        <div class="team-member-role">Lead Security Researcher</div>
+                        <h3 class="team-member-name">Souvik Kandar</h3>
+                        <div class="team-member-bio">
+                            <!-- EDIT: Replace with actual bio -->
+                            <p>Souvik Kandar is a cybersecurity researcher and bug bounty hunter, known for uncovering critical zero-day vulnerabilities and publishing high-impact CVEs in IoT, OT, and ICS systems.</p>
+                            
+                            <p>His work has earned global recognition, including acknowledgments from CISA and Idaho National Laboratory.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- FOOTER SECTION -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!--comment<h2 class="footer-title">Get In Touch</h2>-->
+                <p class="footer-description">
+                    Reach out to our team for research collaboration opportunities, report vulnerability disclosures or any media inquiries and press releases.
+                </p>
+                <a href="https://www.microsec.io/company/contact" class="btn btn-primary">Get In Touch</a>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>Copyright &copy; 2025 MicroSec Pte Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-		<!-- Contact Section -->
-		<section class="contact-section" id="contact">
-			<div class="container">
-				<h2>Contact Lab 0xM</h2>
-				<div class="contact-content">
-					<div class="contact-info">
-						<h3>Research Inquiries</h3>
-						<p>For research collaboration and vulnerability disclosure:</p>
-						<p class="contact-email"></p>
-
-						<h3>Media & Press</h3>
-						<p>For media inquiries and press releases:</p>
-						<p class="contact-email"></p>
-					</div>
-					<div class="contact-form">
-						<h3>Get in Touch</h3>
-						<form>
-							<input type="text" placeholder="Your Name" required />
-							<input type="email" placeholder="Your Email" required />
-							<input type="text" placeholder="Subject" required />
-							<textarea placeholder="Your Message" rows="5" required></textarea>
-							<button type="submit" class="btn btn-primary">Send Message</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<!-- Footer -->
-	<footer>
-		<div class="container">
-			<p class="copyright">© 2025 MicroSec Pte. Ltd. All rights reserved.</p>
-		</div>
-	</footer>
+    <!-- SMOOTH SCROLLING SCRIPT -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
