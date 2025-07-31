@@ -179,21 +179,13 @@ a {
   align-items: center;
 }
 
-.logo {
+.logo img{
   display: flex;
   align-items: center;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
   gap: var(--space-sm);
-}
-
-.logo-icon {
-  width: 32px;
-  height: 32px;
-}
-
-.logo-text {
-  font-size: var(--font-size-xl);
-  font-weight: 700;
-  color: var(--primary-blue);
 }
 
 .nav-menu {
@@ -208,7 +200,7 @@ a {
   font-weight: 500;
   color: var(--dark-gray);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   transition: color var(--transition-fast);
 }
 
@@ -221,6 +213,7 @@ a {
    ============================================================================ */
 .hero {
   background: linear-gradient(135deg, var(--navy-gradient-start), var(--navy-gradient-end));
+  background-image: url('/assets/images/Banner_HeroSection.jpg');
   color: var(--white);
   padding: var(--space-4xl) 0;
   position: relative;
@@ -479,6 +472,7 @@ a {
    ============================================================================ */
 .footer {
   background: linear-gradient(135deg, var(--navy-gradient-start), var(--navy-gradient-end));
+  background-image: url('/assets/images/Banner_ContactSection.jpg');
   color: var(--white);
   padding: var(--space-3xl) 0 var(--space-lg);
 }
