@@ -88,7 +88,7 @@ body {
     line-height: 1.6;
     color: var(--dark-gray);
     background-color: var(--white);
-    margin: 0 5%;
+    margin: 0;
 }
 
 img {
@@ -202,8 +202,8 @@ a {
 }
 
 .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -268,11 +268,11 @@ a {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(8px);
-}
+    backdrop-filter: blur(8px)
+};
 
 .hero-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 5%;
     position: relative;
     z-index: 2;
@@ -309,20 +309,20 @@ a {
    CORE RESEARCH AREAS SECTION
    ============================================================================ */
 .research-areas {
-    padding: var(--space-4xl) 0;
-    background-color: var(--light-gray);
+    padding: var(--space-3xl) 0;
+    background-color: var(--white);
 }
 
 .research-areas-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
+    max-width: 100%;
+    margin: 0 5%;
+    padding: 0;
 }
 
 .section-title {
     text-align: center;
     font-size: var(--font-size-4xl);
-    font-weight: 600;
+    font-weight: 700;
     color: var(--secondary-cyan);
     margin-bottom: var(--space-md);
 }
@@ -331,15 +331,15 @@ a {
     text-align: center;
     font-size: var(--font-size-lg);
     color: var(--medium-gray);
-    margin-bottom: var(--space-3xl);
-    max-width: 800px;
+    margin-bottom: var(--space-2xl);
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .research-grid {
     display: flex;
-    gap: var(--space-2xl);
+    gap: var(--space-3xl);
     justify-content: center;
 }
 
@@ -351,21 +351,24 @@ a {
     box-shadow: 0 4px 20px var(--card-shadow);
     transition: all var(--transition-medium);
     flex: 1;
-    max-width: 400px;
+    max-width: 550px;
 }
 
 .research-card:hover {
     transform: var(--hover-lift);
     /* EDIT: Card hover effect */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 16px var(--secondary-cyan);
     /* EDIT: Card hover shadow */
 }
 
 .research-icon {
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     margin: 0 auto var(--space-lg);
+    padding: 12px;
     color: var(--secondary-cyan);
+    background-color: rgba(var(--secondary-cyan), 0.15);
+    border-radius: 4px;
 }
 
 .research-card-title {
@@ -385,8 +388,8 @@ a {
    LATEST RESEARCH SECTION
    ============================================================================ */
 .latest-research {
-    padding: var(--space-4xl) 0;
-    background-color: var(--white);
+    padding: var(--space-3xl) 0;
+    background-color: var(--light-gray);
 }
 
 .latest-research-container {
