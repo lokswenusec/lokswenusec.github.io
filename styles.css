@@ -19,6 +19,8 @@
     --medium-gray: #666666;
     --dark-gray: #333333;
     --card-shadow: rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: rgba(0, 0, 0, 0.15);
+    --icon-bg: #E1F6FA;
 
     /* HOVER STATES - EDIT FOR DIFFERENT HOVER EFFECTS */
     --hover-primary: var(--black);
@@ -178,15 +180,13 @@ a {
 }
 
 .btn-ghost {
-    background-color: var(--white);
+    background-color: transparent;
     color: var(--black);
-    border: 2px solid var(--black);
+    border: 1px solid var(--black);
 }
 
 .btn-ghost:hover {
-    background-color: var(--secondary-blue);
-    color: var(--black);
-    border: 2px solid var(--black);
+    background-color: var(--secondary-cyan);
 }
 
 /* ============================================================================
@@ -351,23 +351,23 @@ a {
     box-shadow: 0 4px 20px var(--card-shadow);
     transition: all var(--transition-medium);
     flex: 1;
-    max-width: 550px;
+    max-width: 450px;
 }
 
 .research-card:hover {
     transform: var(--hover-lift);
     /* EDIT: Card hover effect */
-    box-shadow: 0px 0px 16px var(--secondary-cyan);
+    box-shadow: 0px 0px 16px 2px var(--icon-bg);
     /* EDIT: Card hover shadow */
 }
 
 .research-icon {
     width: 96px;
     height: 96px;
-    margin: 0 auto var(--space-lg);
+    margin: 0 auto var(--space-md);
     padding: 12px;
     color: var(--secondary-cyan);
-    background-color: rgba(var(--secondary-cyan), 0.15);
+    background-color: var(--icon-bg);
     border-radius: 4px;
 }
 
@@ -415,8 +415,7 @@ a {
 
 .research-post:hover {
     transform: var(--hover-lift);
-    /* EDIT: Research post hover effect */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 30px var(--card-hover-shadow);
 }
 
 .research-post-content {
@@ -425,15 +424,12 @@ a {
 
 .research-category {
     display: inline-block;
-    background-color: var(--secondary-cyan);
-    color: var(--white);
-    padding: var(--space-xs) var(--space-sm);
-    border-radius: 4px;
+    color: var(--secondary-cyan);
     font-size: var(--font-size-xs);
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: var(--space-md);
+    letter-spacing: 1px;
+    margin-bottom: var(--space-sm);
 }
 
 .research-post-title {
@@ -455,8 +451,8 @@ a {
    RESEARCH TEAM SECTION
    ============================================================================ */
 .research-team {
-    padding: var(--space-4xl) 0;
-    background-color: var(--light-gray);
+    padding: var(--space-3xl) 0;
+    background-color: var(--white);
 }
 
 .research-team-container {
@@ -471,9 +467,10 @@ a {
     align-items: center;
     background-color: var(--white);
     padding: var(--space-2xl);
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 4px 20px var(--card-shadow);
     margin-top: var(--space-3xl);
+    max-width: 800px;
 }
 
 .team-member-photo {
