@@ -252,8 +252,8 @@ a {
    HERO SECTION
    ============================================================================ */
 .hero {
-    background: linear-gradient(135deg, var(--navy-gradient-start), var(--navy-gradient-end));
     background-image: url('/assets/images/Banner_HeroSection.jpg');
+    background-size: cover;
     color: var(--white);
     padding: var(--space-4xl) 0;
     position: relative;
@@ -268,19 +268,18 @@ a {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.65);
-    filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
 
 .hero-container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
+    margin: 0 5%;
     position: relative;
     z-index: 2;
 }
 
 .hero-content {
-    max-width: 75%;
+    max-width: 55%;
 }
 
 .hero-subtitle {
