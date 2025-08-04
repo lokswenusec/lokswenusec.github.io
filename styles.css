@@ -290,9 +290,9 @@ a {
 
 .logo-hero {
     height: auto;
-    width: 180px; /* Base width for desktop */
+    width: 200px; /* Base width for desktop */
     max-width: 100%;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-sm);
 }
 
 .hero-subtitle {
@@ -645,8 +645,8 @@ a {
     }
 
     .logo-hero {
-        width: 140px;
-        margin-bottom: var(--space-md);
+        width: 160px;
+        margin-bottom: var(--space-sm);
     }
 
     .research-grid {
@@ -735,9 +735,9 @@ a {
     .hero-subtitle {
         font-size: var(--font-size-base);
     }
-    
+
     .logo-hero {
-        width: 120px;
+        width: 140px;
         margin-bottom: var(--space-sm);
     }
 
