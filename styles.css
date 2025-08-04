@@ -251,7 +251,7 @@ a {
     background-image: url('/assets/images/Banner_HeroSection.jpg');
     background-size: cover;
     color: var(--white);
-    padding: 0 0;
+    padding: var(--space-xl) 0;
     position: relative;
     overflow: hidden;
     min-height: 40vh; /* Ensure minimum height */
@@ -603,9 +603,23 @@ a {
         --space-3xl: 2rem;
     }
 
+    .nav-menu {
+        gap: var(--space-sm);
+    }
+
+    .nav-link {
+        font-size: var(--font-size-xs);
+    }
+
     .hero-content {
         max-width: 100%;
         padding-right: 0;
+        min-height: 50vh;
+    }
+    
+    .hero-container {
+        min-height: 50vh;
+        padding: var(--space-xl) var(--space-md);
     }
 
     .hero-title {
@@ -641,17 +655,7 @@ a {
         text-align: center;
     }
 
-    .header-container {
-        padding: 0 var(--space-md);
-    }
 
-    .nav-menu {
-        gap: var(--space-md);
-    }
-
-    .nav-link {
-        font-size: var(--font-size-xs);
-    }
 }
 
 /* SMALL MOBILE (0px - 479px) */
@@ -661,6 +665,18 @@ a {
         --font-size-4xl: 2rem;
         --font-size-3xl: 1.75rem;
         --space-2xl: 2rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: var(--space-md);
+        padding: var(--space-md);
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-md);
     }
 
     .hero {
