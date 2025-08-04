@@ -251,8 +251,8 @@ a {
 .hero {
     background-image: url('/assets/images/Banner_HeroSection.jpg');
     background-size: cover;
-    color: var(--black);
-    padding: var(--space-4xl) 0;
+    color: var(--white);
+    padding: 0 0;
     position: relative;
     overflow: hidden;
     min-height: 60vh; /* Ensure minimum height */
@@ -639,7 +639,7 @@ a {
 }
 
 /* MOBILE (320px - 767px) */
-@media (max-width: 767px) {
+@media (max-width: 715px) {
     :root {
         --space-4xl: 3rem;
         /* Reduce large spacing on mobile */
