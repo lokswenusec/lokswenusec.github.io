@@ -615,7 +615,12 @@ a {
     }
 
     .nav-link {
-        font-size: var(--font-size-xs);
+        font-size: var(--font-size-sm);
+    }
+
+    .btn-primary {
+        font-size: var(--font-size-sm);
+        padding: var(--space-sm) var(--space-lg);
     }
 
     .hero-content {
@@ -663,8 +668,8 @@ a {
 
 }
 
-/* Just Header and footer (501px - 679px) */
-@media (max-width: 679px) {
+/* Just Header and footer (501px - 700px) */
+@media (max-width: 700px) {
     .header-container {
         flex-direction: column;
         gap: var(--space-xs);
@@ -703,7 +708,7 @@ a {
     .nav-menu {
         flex-wrap: wrap;
         justify-content: center;
-        gap: var(--space-md);
+        gap: var(--space-sm);
     }
 
     .hero {
