@@ -254,7 +254,7 @@ a {
     padding: 0 0;
     position: relative;
     overflow: hidden;
-    min-height: 60vh; /* Ensure minimum height */
+    min-height: 40vh; /* Ensure minimum height */
 }
 
 .hero::before {
@@ -275,7 +275,7 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-    min-height: 60vh;
+    min-height: 40vh;
 }
 
 .hero-content {
@@ -520,7 +520,6 @@ a {
    FOOTER SECTION
    ============================================================================ */
 .footer {
-    background: linear-gradient(135deg, var(--navy-gradient-start), var(--navy-gradient-end));
     background-image: url('/assets/images/Banner_ContactSection.jpg');
     background-size: cover;
     background-position: center;
@@ -643,8 +642,20 @@ a {
         margin-bottom: var(--space-lg);
     }
 
+    .footer-description {
+        text-align: center;
+    }
+
+    .header-container {
+        padding: 0 var(--space-md);
+    }
+
     .nav-menu {
-        display: none; /* Consider adding a mobile menu button */
+        gap: var(--space-md);
+    }
+
+    .nav-link {
+        font-size: var(--font-size-xs);
     }
 }
 
@@ -693,5 +704,9 @@ a {
 
     .footer {
         padding: var(--space-2xl) var(--space-md);
+    }
+   
+    .footer-description {
+        text-align: center;
     }
 }
