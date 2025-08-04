@@ -251,7 +251,7 @@ a {
 .hero {
     background-image: url('/assets/images/Banner_HeroSection.jpg');
     background-size: cover;
-    color: var(--white);
+    color: var(--black);
     padding: var(--space-4xl) 0;
     position: relative;
     overflow: hidden;
