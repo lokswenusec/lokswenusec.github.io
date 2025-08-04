@@ -188,13 +188,12 @@ a {
 }
 
 .ext-link {
-    color: var(--black);
+    color: var(--primary-blue);
     transition: color var(--transition-fast);
     text-decoration: underline;
 }
 .ext-link:hover {
-    color: var(--hover-secondary);
-    text-decoration: underline 5px;
+    color: var(--hover-primary);
 }
 
 /* ============================================================================
@@ -273,7 +272,7 @@ a {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
     z-index: 0;
 }
 
@@ -533,13 +532,13 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     color: var(--white);
-    padding: var(--space-3xl) var(--space-lg);
+    padding: var(--space-2xl) 0;
 }
 
 .footer-container {
     max-width: 100%;
     margin: 0 5%;
-    padding: 0 var(--space-lg);
+    padding: 0 0;
     display: flex;
     flex-direction: column;
 }
@@ -659,7 +658,7 @@ a {
     }
 
     .footer-description {
-        text-align: center;
+        font-size: var(--font-size-xl);
     }
 
 
@@ -673,6 +672,9 @@ a {
         padding: 0;
     }
 
+    .footer {
+        padding: var(--space-xl) 0;
+    }
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -737,10 +739,6 @@ a {
     .team-member-photo {
         width: 120px;
         height: 120px;
-    }
-
-    .footer {
-        padding: var(--space-2xl) var(--space-md);
     }
 
 }
