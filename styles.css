@@ -283,7 +283,7 @@ a {
 }
 
 .hero-content {
-    max-width: 55%;
+    max-width: 65%;
     padding-right: var(--space-xl); /* Add some breathing room */
     z-index: 2;
 }
