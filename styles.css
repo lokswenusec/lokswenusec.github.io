@@ -10,7 +10,6 @@
    CSS CUSTOM PROPERTIES (DESIGN TOKENS)
    ============================================================================ */
 :root {
-    /* COLORS - EDIT THESE VALUES TO MATCH YOUR BRAND */
     --primary-blue: #0277FF;
     --secondary-cyan: #36C3DF;
     --black: #000000;
@@ -22,7 +21,6 @@
     --card-hover-shadow: rgba(0, 0, 0, 0.15);
     --icon-bg: #E1F6FA;
 
-    /* HOVER STATES - EDIT FOR DIFFERENT HOVER EFFECTS */
     --hover-primary: var(--black);
     /* EDIT: Primary button hover */
     --hover-secondary: var(--secondary-cyan);
@@ -166,7 +164,7 @@ a {
 }
 
 .btn-primary:hover {
-    background-color: var(--black);
+    background-color: var(--hover-primary);
 }
 
 .btn-secondary {
@@ -175,7 +173,7 @@ a {
 }
 
 .btn-secondary:hover {
-    background-color: var(--black);
+    background-color: var(--hover-primary);
     color: var(--white);
 }
 
@@ -187,6 +185,16 @@ a {
 
 .btn-ghost:hover {
     background-color: var(--secondary-cyan);
+}
+
+.ext-link {
+    color: var(--black);
+    transition: color var(--transition-fast);
+    text-decoration: underline;
+}
+.ext-link:hover {
+    color: var(--hover-secondary);
+    text-decoration: underline 5px;
 }
 
 /* ============================================================================
