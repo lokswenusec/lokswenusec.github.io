@@ -51,7 +51,7 @@
 						Lab0xM is the dedicated zero-day research division of MicroSec, focused on discovering and 
 						responsibly disclosing zero-day vulnerabilities, IoT/OT security risks, and critical infrastructure threats.
 					</p>
-					<a href="#research" class="btn btn-secondary">View Latest Research</a>
+					<a href="#research" class="btn btn-secondary">View Featured Research</a>
 				</div>
 			</div>
 		</section>
@@ -91,55 +91,53 @@
 			</div>
 		</section>
 
-		<!-- LATEST RESEARCH SECTION -->
+		<!-- FEATURED RESEARCH SECTION -->
 		<!-- EDIT: See if can make into carousel to keep adding new articles -->
-		<section class="latest-research" id="research">
-			<div class="latest-research-container">
-				<h2 class="section-title">Latest Research</h2>
+		<section class="featured-research" id="research">
+			<div class="featured-research-container">
+				<h2 class="section-title">Featured Research</h2>
 				<p class="section-subtitle">
-					Read about the latest discoveries and disclosures made by our research team.
+					Read about all the discoveries and disclosures made by our research team at <a href="https://www.microsec.io/resources/blog"> our blog.</a>
 				</p>
 
 				<div class="research-posts">
 					<!-- Research Post 1 -->
 					<article class="research-post">
 						<div class="research-post-content">
+							<!-- EDIT: Replace with Category of research -->
 							<span class="research-category">IoT Security</span>
-							<h3 class="research-post-title">Vulnerability Analysis of IoT Firmware</h3>
+							<!-- EDIT: Replace with blog title  -->
+							<h3 class="research-post-title">MicroSec Identifies SpaceX Starlink Exposure (Customer Side Misconfiguration)
+							</h3>
+							<!-- EDIT: Replace with short summary of post, or first few sentences. -->
 							<p class="research-post-description">
-								Comprehensive study of firmware security in consumer IoT devices, revealing critical
-								vulnerabilities.
+								Satellite internet infrastructure, while revolutionary, underscores critical cybersecurity responsibilities. MicroSec Researchers recently identified and responsibly disclosed an unintended exposure involving a Starlink customer terminal. 
+								<br><br>This disclosure explores how misconfigured third-party equipment inadvertently exposed a limited set of internal gRPC commands, the potential implications, and necessary security best practices.
 							</p>
 							<!-- EDIT: Replace with actual link to blog -->
-							<a href="#" class="btn btn-ghost">Read More</a>
+							<a href="https://www.microsec.io/posts/microsec-identifies-spacex-starlink-exposure-customer-side-misconfiguration" class="btn btn-ghost">Read More</a>
 						</div>
 					</article>
 
 					<!-- Research Post 2 -->
 					<article class="research-post">
 						<div class="research-post-content">
-							<span class="research-category">Network Security</span>
-							<h3 class="research-post-title">Zero Trust Architecture for IoT Networks</h3>
+							<!-- EDIT: Replace with Category of research -->
+							<span class="research-category">IoT Security</span>
+							<!-- EDIT: Replace with blog title -->
+							<h3 class="research-post-title">Disclosure of Critical Vulnerability in Ollama AI Model Server: Unauthenticated Remote API Access
+							</h3>
+							<!-- EDIT: Replace with short summary of post, or first few sentences. -->
 							<p class="research-post-description">
-								Novel framework for implementing zero trust security in IoT networks.
+								MicroSec Researchers identified a potential critical vulnerability in the Ollama AI Model Server, an open-source platform designed for deploying large language models (LLMs) locally. Ollama servers exposed to the internet do not enforce authentication or access controls, allowing unauthenticated attackers to remotely interact with, modify, and control AI models.
+								<br><br>
+								Though originally intended for local deployment, widespread internet exposure has occurred, driven by innovative integrations within startups, smart home IoT systems, healthcare, and industrial IoT (IIoT/OT) environments.
 							</p>
 							<!-- EDIT: Replace with actual link to blog -->
-							<a href="#" class="btn btn-ghost">Read More</a>
+							<a href="https://www.microsec.io/posts/disclosure-of-critical-vulnerability-in-ollama-ai-model-server-unauthenticated-remote-api-access" class="btn btn-ghost">Read More</a>
 						</div>
 					</article>
 
-					<!-- Research Post 3 -->
-					<article class="research-post">
-						<div class="research-post-content">
-							<span class="research-category">OT Security</span>
-							<h3 class="research-post-title">Security in Industrial Control Systems</h3>
-							<p class="research-post-description">
-								Analysis of attack surfaces in modern SCADA systems and mitigation strategies.
-							</p>
-							<!-- EDIT: Replace with actual link to blog -->
-							<a href="#" class="btn btn-ghost">Read More</a>
-						</div>
-					</article>
 				</div>
 			</div>
 		</section>
