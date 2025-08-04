@@ -594,11 +594,6 @@ a {
     .team-member {
         max-width: 750px;
     }
-
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 /* MOBILE AND TABLETS (480px - 767px) */
