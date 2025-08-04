@@ -584,7 +584,7 @@ a {
    RESPONSIVE DESIGN - MOBILE BREAKPOINTS
    ============================================================================ */
 
-/* LARGER TABLETS AND SMALL DESKTOP (768px - 1199px) */
+/* LARGER TABLETS AND SMALL DESKTOP (801px - 1199px) */
 @media (max-width: 1199px) {
     .hero-content {
         max-width: 70%;
@@ -603,8 +603,8 @@ a {
     }
 }
 
-/* MOBILE AND TABLETS (480px - 767px) */
-@media (max-width: 767px) {
+/* MOBILE AND TABLETS (679px - 800px) */
+@media (max-width: 800px) {
     :root {
         --space-4xl: 3rem;
         --space-3xl: 2rem;
@@ -663,7 +663,7 @@ a {
 
 }
 
-/* Just Header and footer (0-700px) */
+/* Just Header and footer (501px - 679px) */
 @media (max-width: 679px) {
     .header-container {
         flex-direction: column;
@@ -691,7 +691,7 @@ a {
     }
 }
 
-/* SMALL MOBILE (0px - 479px) */
+/* SMALL MOBILE (0px - 500px) */
 @media (max-width: 500px) {
     :root {
         --font-size-5xl: 2.25rem;
