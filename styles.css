@@ -259,7 +259,12 @@ a {
     min-height: 60vh; /* Ensure minimum height */
 }
 
-
+.hero::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    z-index: 0;
+};
 
 .hero-container {
     max-width: 100%;
