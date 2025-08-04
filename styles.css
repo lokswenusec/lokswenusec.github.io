@@ -283,7 +283,7 @@ a {
 }
 
 .hero-content {
-    max-width: 65%;
+    max-width: 75%;
     padding-right: var(--space-xl); /* Add some breathing room */
     z-index: 2;
 }
@@ -591,7 +591,11 @@ a {
 /* LARGER TABLETS AND SMALL DESKTOP (801px - 1199px) */
 @media (max-width: 1199px) {
     .hero-content {
-        max-width: 70%;
+        max-width: 75%;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-4xl);
     }
 
     .logo-hero {
@@ -641,7 +645,7 @@ a {
     }
 
     .hero-title {
-        font-size: var(--font-size-4xl);
+        font-size: var(--font-size-3xl);
     }
 
     .logo-hero {
