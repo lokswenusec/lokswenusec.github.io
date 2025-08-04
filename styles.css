@@ -222,13 +222,10 @@ a {
     height: 100%;
 }
 
-.logo-svg {
+.logo-nav {
     height: 100%;
-    /* Constrain to container height */
     width: auto;
-    /* Maintain aspect ratio */
     max-height: 40px;
-    /* Set maximum height to match nav items */
 }
 
 .nav-menu {
@@ -271,8 +268,8 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
     z-index: 0;
 }
 
@@ -289,6 +286,13 @@ a {
     max-width: 55%;
     padding-right: var(--space-xl); /* Add some breathing room */
     z-index: 2;
+}
+
+.logo-hero {
+    height: auto;
+    width: 180px; /* Base width for desktop */
+    max-width: 100%;
+    margin-bottom: var(--space-lg);
 }
 
 .hero-subtitle {
@@ -590,6 +594,10 @@ a {
         max-width: 70%;
     }
 
+    .logo-hero {
+        width: 160px;
+    }
+
     .research-grid {
         gap: var(--space-xl);
     }
@@ -634,6 +642,11 @@ a {
 
     .hero-title {
         font-size: var(--font-size-4xl);
+    }
+
+    .logo-hero {
+        width: 140px;
+        margin-bottom: var(--space-md);
     }
 
     .research-grid {
@@ -721,6 +734,11 @@ a {
 
     .hero-subtitle {
         font-size: var(--font-size-base);
+    }
+    
+    .logo-hero {
+        width: 120px;
+        margin-bottom: var(--space-sm);
     }
 
     .hero-description {
