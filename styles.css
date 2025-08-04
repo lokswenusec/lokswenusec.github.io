@@ -406,7 +406,7 @@ a {
 .featured-research-container {
     max-width: 100%;
     margin: 0 5%;
-    padding: 0 var(--space-md);
+    padding: 0;
 }
 
 .research-posts {
@@ -472,7 +472,7 @@ a {
 .research-team-container {
     max-width: 100%;
     margin: 0 5%;
-    padding: 0 var(--space-md);
+    padding: 0;
     display: flex;
     gap: var(--space-3xl);
 }
@@ -648,12 +648,12 @@ a {
         flex-direction: column;
         text-align: center;
         padding: var(--space-xl);
+        gap: var(--space-xl);
     }
 
     .team-member-photo {
         width: 150px;
         height: 150px;
-        margin-bottom: var(--space-lg);
     }
 
     .footer-description {
