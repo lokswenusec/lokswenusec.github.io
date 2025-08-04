@@ -251,7 +251,6 @@ a {
 .hero {
     background-image: url('/assets/images/Banner_HeroSection.jpg');
     background-size: cover;
-
     color: var(--white);
     padding: var(--space-4xl) 0;
     position: relative;
@@ -261,10 +260,15 @@ a {
 
 .hero::before {
     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(8px);
     z-index: 0;
-};
+}
 
 .hero-container {
     max-width: 100%;
