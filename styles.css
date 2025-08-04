@@ -486,7 +486,7 @@ a {
     padding: var(--space-2xl);
     border-radius: 8px;
     box-shadow: 0 4px 20px var(--card-shadow);
-    margin-top: var(--space-2xl);
+    margin-top: var(--space-xl);
     max-width: 850px;
 }
 
@@ -683,6 +683,10 @@ a {
     .footer-description {
         text-align: center;
         font-size: var(--font-size-xl);
+    }
+
+    .team-member {
+        margin-top: var(--space-lg);
     }
 }
 
