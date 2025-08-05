@@ -820,7 +820,7 @@ a {
         margin-top: var(--space-lg);
     }
 
-    .hero-cta .btn{
+    .hero-cta .btn {
         white-space: normal;
         text-align: center;
     }
@@ -871,7 +871,7 @@ a {
     .hero-cta .btn {
         width: 100%;
     }
-    
+
     .research-card {
         padding: var(--space-lg);
     }
