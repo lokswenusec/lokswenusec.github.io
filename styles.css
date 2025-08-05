@@ -563,6 +563,11 @@ a {
     max-width: 850px;
 }
 
+.team-member:hover {
+    transform: var(--hover-lift);
+    box-shadow: 0 8px 30px var(--card-hover-shadow);
+}
+
 .team-member-photo {
     width: 200px;
     height: 200px;
