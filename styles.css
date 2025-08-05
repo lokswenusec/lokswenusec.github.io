@@ -143,6 +143,7 @@ a {
    ============================================================================ */
 .btn {
     display: inline-flex;
+    white-space: nowrap;
     align-items: center;
     justify-content: center;
     padding: var(--space-sm) var(--space-xl);
@@ -190,7 +191,7 @@ a {
 .ext-link {
     color: var(--primary-blue);
     transition: color var(--transition-fast);
-	font-weight: 600;
+    font-weight: 600;
 }
 .ext-link:hover {
     color: var(--hover-primary);
@@ -626,6 +627,10 @@ a {
     text-align: left;
     margin-bottom: 0;
     max-width: 1000px;
+}
+
+.footer .btn-primary {
+    white-space: normal;
 }
 
 /* ============================================================================
