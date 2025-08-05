@@ -190,7 +190,7 @@ a {
 .ext-link {
     color: var(--primary-blue);
     transition: color var(--transition-fast);
-    text-decoration: underline;
+	font-weight: 600;
 }
 .ext-link:hover {
     color: var(--hover-primary);
@@ -463,11 +463,76 @@ a {
 }
 
 /* ============================================================================
+   VULNERABILITY DISCLOSURES SECTION
+   ============================================================================ */
+.research-CVE {
+    padding: var(--space-3xl) 0;
+    background-color: var(--white);
+}
+
+.research-CVE-container {
+    max-width: 100%;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.research-CVE table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--space-xl);
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--card-shadow);
+}
+
+.research-CVE th {
+    background-color: var(--white);
+    color: var(--secondary-cyan);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: var(--space-lg);
+    text-align: left;
+    border-bottom: 2px solid var(--light-gray);
+}
+
+.research-CVE tr {
+    transition: all var(--transition-fast);
+}
+
+.research-CVE tr:hover {
+    background-color: var(--light-gray);
+}
+
+.research-CVE td {
+    padding: var(--space-lg);
+    font-size: var(--font-size-base);
+    color: var(--medium-gray);
+    border-bottom: 1px solid var(--light-gray);
+    vertical-align: top;
+}
+
+.research-CVE td:first-child {
+    font-weight: 600;
+    color: var(--dark-gray);
+	white-space: nowrap;
+	width: 1%;
+}
+
+.research-CVE td:last-child {
+	white-space: nowrap;
+	width: 1%;
+}
+
+
+/* ============================================================================
    RESEARCH TEAM SECTION
    ============================================================================ */
 .research-team {
     padding: var(--space-3xl) 0;
-    background-color: var(--white);
+    background-color: var(--light-gray);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -682,7 +747,29 @@ a {
         font-size: var(--font-size-xl);
     }
 
+    .research-CVE table {
+        display: block;
+        overflow-x: auto;
+    }
 
+    .research-CVE th,
+    .research-CVE td {
+        padding: var(--space-md);
+        min-width: 120px;
+    }
+
+    .research-CVE td:first-child {
+        min-width: 150px;
+    }
+
+    .research-CVE td:last-child {
+        min-width: 100px;
+    }
+
+    .research-CVE .btn-ghost {
+        padding: var(--space-xs) var(--space-sm);
+    }
+    
 }
 
 /* Just Header and footer (501px - 700px) */

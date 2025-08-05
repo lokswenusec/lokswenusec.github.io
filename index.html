@@ -93,7 +93,6 @@
 		</section>
 
 		<!-- FEATURED RESEARCH SECTION -->
-		<!-- EDIT: See if can make into carousel to keep adding new articles -->
 		<section class="featured-research" id="research">
 			<div class="featured-research-container">
 				<h2 class="section-title">Featured Research</h2>
@@ -101,6 +100,7 @@
 					Read about all the discoveries and disclosures made by our research team at <a class="ext-link" href="https://www.microsec.io/resources/blog"  target="_blank"> our blog <i class="fas fa-external-link-alt"></i>.</a>
 				</p>
 
+				<!-- EDIT: ADD RESEARCH ARTICLES IN THIS SECTION -->
 				<div class="research-posts">
 					<!-- Research Post 1 -->
 					<article class="research-post">
@@ -140,6 +140,57 @@
 					</article>
 
 				</div>
+			</div>
+		</section>
+
+		<!-- VULNERABILITY DISCLOSURES SECTION -->
+		<section class="research-CVE">
+			<div class="research-CVE-container">
+				<h2 class="section-title">Vulnerability Disclosures</h2>
+				<p class="section-subtitle">
+					Discover all the vulnerabilities in critical IoT, OT, ICS, medical, and embedded systems that were identified and responsibly disclosed by our Lab0xM team.
+				</p>
+				<table>
+					<thead>
+						<tr>
+							<th>CVE ID</th>
+							<th>Description</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Row 1 -->
+						<tr>
+							<td>CVE-2025-0896</td>
+							<td><p>Orthanc server prior to version 1.5.8 does not enable basic authentication by default when remote access is enabled. This could result in unauthorized access by an attacker.</p></td>
+							<td><a target="_blank" class="btn btn-ghost" href="https://nvd.nist.gov/vuln/detail/CVE-2025-0896">View CVE</a></td>
+						</tr>
+						<!-- Row 2 -->
+						<tr>
+							<td>CVE-2025-1863</td>
+							<td><p>Default authentication is disabled, allowing unauthenticated access to device settings and data.</p></td>
+							<td><a target="_blank" class="btn btn-ghost" href="https://nvd.nist.gov/vuln/detail/cve-2025-1863">View CVE</a></td>
+						</tr>
+						<!-- Row 3 -->
+						<tr>
+							<td>CVE-2025-1907</td>
+							<td><p>Instantel Micromate lacks authentication on a configuration port which could allow an attacker to execute commands if connected.</p></td>
+							<td><a target="_blank" class="btn btn-ghost" href="https://nvd.nist.gov/vuln/detail/CVE-2025-1907">View CVE</a></td>
+						</tr>
+						<!-- Row 4 -->
+						<tr>
+							<td>CVE-2025-2567</td>
+							<td><p>An attacker could modify or disable settings, disrupt fuel monitoring and supply chain operations, leading to disabling of ATG monitoring. This would result in potential safety hazards in fuel storage and transportation.</p></td>
+							<td><a target="_blank" class="btn btn-ghost" href="https://nvd.nist.gov/vuln/detail/CVE-2025-2567">View CVE</a></td>
+						</tr>
+						<!-- Row 5 -->
+						<tr>
+							<td>CVE-2025-5310</td>
+							<td><p>Dover Fueling Solutions ProGauge MagLink LX Consoles expose an undocumented and unauthenticated target communication framework (TCF) interface on a specific port. Files can be created, deleted, or modified, potentially leading to remote code execution.</p></td>
+							<td><a target="_blank" class="btn btn-ghost" href="https://nvd.nist.gov/vuln/detail/CVE-2025-5310">View CVE</a></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</section>
 
