@@ -320,9 +320,15 @@ a {
 .hero-description {
     font-size: var(--font-size-lg);
     line-height: 1.6;
-    margin-bottom: var(--space-2xl);
+    margin-bottom: var(--space-xl);
     opacity: 0.9;
     color: var(--white);
+}
+
+.hero-cta {
+    max-width: 100%;
+    display: flex;
+    gap: var(--space-xl);
 }
 
 /* ============================================================================
@@ -813,6 +819,11 @@ a {
     .team-member {
         margin-top: var(--space-lg);
     }
+
+    .hero-cta .btn{
+        white-space: normal;
+        text-align: center;
+    }
 }
 
 /* SMALL MOBILE (0px - 500px) */
@@ -851,6 +862,16 @@ a {
         font-size: var(--font-size-base);
     }
 
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-sm);
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+    }
+    
     .research-card {
         padding: var(--space-lg);
     }
